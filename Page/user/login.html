@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPHP Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="card col-md-6 offset-md-3" style="margin-top: 10%;" id="loginForm">
+            <div class="text-center" style="margin-top: 5%;">
+                <img src="https://upload.wikimedia.org/wikipedia/th/thumb/a/a4/UPHosLogo.svg/1024px-UPHosLogo.svg.png"
+                    class="img-fluid w-25 p-3" alt="Responsive image">
+                <h2>ลงชื่อเข้าใช้</h2>
+                <h6>ระบบ Maintenance Report โรงพยาบาลมหาวิทยาลัยพะเยา</h6>
+            </div>
+            
+                <div class="p-2">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" id="inFormEmail" placeholder="Email" required>
+                
+                </div>
+                <div class="p-2">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" id="inFormPassword"
+                        placeholder="Password" required>
+                </div>
+                <div class="card-body">
+                    <a type="button" class="btn btn-link " href="createID.html">Sign Up</a>
+                    <button type="submit" class="btn btn-primary ">Sign in</button>
+                </div>
+                <h5></h5>
+            
+        </form>
+    </div>
+
+    <!-- js -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="/js/userjs/login.js"></script>
+</body>
+</body>
+
+</html>
